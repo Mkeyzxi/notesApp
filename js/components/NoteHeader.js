@@ -6,7 +6,7 @@ class NoteHeader extends HTMLElement {
             <style>
                 header {
                     position: fixed;
-                    top: 0;
+                    top: -1px;
                     left: 0;
                     right: 0;
                     background: #28a745;
@@ -14,7 +14,6 @@ class NoteHeader extends HTMLElement {
                     padding: 10px;
                     text-align: center;
                     font-size: 1.5em;
-                    width: 100%;
                 }
             </style>
             <header>
@@ -23,4 +22,6 @@ class NoteHeader extends HTMLElement {
         `;
     }
 }
-customElements.define('note-header', NoteHeader);
+if (!customElements.get('note-header')) {
+    customElements.define('note-header', NoteHeader);
+}

@@ -1,10 +1,8 @@
-import './js/components/NoteHeader.js'
-import './js/components/NoteForm.js'
-import './js/components/NoteFooter.js'
+// Komponen
 import './js/components/NoteEntries.js';
-import notesData from './js/notes-data.js';
-
-document.addEventListener('DOMContentLoaded', () => {
-    const noteEntries = document.querySelector('note-entries');
-    noteEntries.entries = notesData;
-});
+import './js/components/NoteHeader.js';
+import './js/components/NoteForm.js';
+import './js/components/NoteFooter.js';
+// File utama
+import './js/app.js';
+import './css/style.css';
